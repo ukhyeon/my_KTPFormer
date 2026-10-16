@@ -1,0 +1,121 @@
+소프트맥수 
+Evaluating...
+Evaluating on subject Validate/S1
+Loading evaluate checkpoint checkpoint/sand_qk_softmax/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 524 epochs
+/home/robotics/anaconda3/envs/ktpformer_merge/lib/python3.9/site-packages/torch/nn/modules/container.py:119: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+inference time: 3.0855472087860107
+
+----Box----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 24.49507315953573 mm
+Protocol #2 Error (P-MPJPE): 20.515580599506695 mm
+Protocol #3 Error (N-MPJPE): 24.17271366963784 mm
+Velocity Error (MPJVE): 2.367794762055079 mm
+----------
+Loading evaluate checkpoint checkpoint/sand_qk_softmax/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 524 epochs
+inference time: 2.2271435260772705
+
+----Walking----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 16.66071690675436 mm
+Protocol #2 Error (P-MPJPE): 12.112747440396838 mm
+Protocol #3 Error (N-MPJPE): 16.426777594130147 mm
+Velocity Error (MPJVE): 1.9361024376738702 mm
+----------
+Loading evaluate checkpoint checkpoint/sand_qk_softmax/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 524 epochs
+inference time: 2.1222951412200928
+
+----Jog----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 26.936877232331497 mm
+Protocol #2 Error (P-MPJPE): 19.373527489220486 mm
+Protocol #3 Error (N-MPJPE): 24.789557147484558 mm
+Velocity Error (MPJVE): 4.726088086429696 mm
+----------
+Protocol #1   (MPJPE) action-wise average: 22.7 mm
+Protocol #2 (P-MPJPE) action-wise average: 17.3 mm
+Protocol #3 (N-MPJPE) action-wise average: 21.8 mm
+Velocity      (MPJVE) action-wise average: 3.01 mm
+
+Evaluating on subject Validate/S2
+Loading evaluate checkpoint checkpoint/sand_qk_softmax/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 524 epochs
+inference time: 3.742253065109253
+
+----Box----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 33.255691412422394 mm
+Protocol #2 Error (P-MPJPE): 26.158270922799908 mm
+Protocol #3 Error (N-MPJPE): 32.78789723085033 mm
+Velocity Error (MPJVE): 4.391424478186915 mm
+----------
+Loading evaluate checkpoint checkpoint/sand_qk_softmax/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 524 epochs
+inference time: 1.541123628616333
+
+----Walking----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 16.44653733819723 mm
+Protocol #2 Error (P-MPJPE): 11.498731561005116 mm
+Protocol #3 Error (N-MPJPE): 16.195540005962055 mm
+Velocity Error (MPJVE): 2.0374462474137545 mm
+----------
+Loading evaluate checkpoint checkpoint/sand_qk_softmax/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 524 epochs
+inference time: 1.4295427799224854
+
+----Jog----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 14.779398528238138 mm
+Protocol #2 Error (P-MPJPE): 10.502855603893599 mm
+Protocol #3 Error (N-MPJPE): 14.600397398074469 mm
+Velocity Error (MPJVE): 2.8796198312193155 mm
+----------
+Protocol #1   (MPJPE) action-wise average: 21.5 mm
+Protocol #2 (P-MPJPE) action-wise average: 16.1 mm
+Protocol #3 (N-MPJPE) action-wise average: 21.2 mm
+Velocity      (MPJVE) action-wise average: 3.1 mm
+
+Evaluating on subject Validate/S3
+Loading evaluate checkpoint checkpoint/sand_qk_softmax/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 524 epochs
+inference time: 1.6095468997955322
+
+----Box----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 31.19878222544988 mm
+Protocol #2 Error (P-MPJPE): 22.663683940966923 mm
+Protocol #3 Error (N-MPJPE): 30.49927142759164 mm
+Velocity Error (MPJVE): 3.996943511689703 mm
+----------
+Loading evaluate checkpoint checkpoint/sand_qk_softmax/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 524 epochs
+inference time: 2.221341609954834
+
+----Walking----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 26.201651340313983 mm
+Protocol #2 Error (P-MPJPE): 15.506417618370524 mm
+Protocol #3 Error (N-MPJPE): 21.692487137282594 mm
+Velocity Error (MPJVE): 2.40218532089071 mm
+----------
+Loading evaluate checkpoint checkpoint/sand_qk_softmax/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 524 epochs
+inference time: 1.8840851783752441
+
+----Jog----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 22.057684138417244 mm
+Protocol #2 Error (P-MPJPE): 13.448136858642101 mm
+Protocol #3 Error (N-MPJPE): 21.76278953750928 mm
+Velocity Error (MPJVE): 3.4802455144623914 mm
+----------
+Protocol #1   (MPJPE) action-wise average: 26.5 mm
+Protocol #2 (P-MPJPE) action-wise average: 17.2 mm
+Protocol #3 (N-MPJPE) action-wise average: 24.7 mm
+Velocity      (MPJVE) action-wise average: 3.29 mm
+

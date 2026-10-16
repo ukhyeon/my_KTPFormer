@@ -1,0 +1,132 @@
+오리지널 
+Evaluate!
+python run_ktpformer.py -k gt -c checkpoint/epoch1000 --evaluate s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin -f 27 -d humaneva15 -str Train/S1,Train/S2,Train/S3 -ste Validate/S1,Validate/S2,Validate/S3 -b 1024 -e 200 -lrd 0.996 -a Walk,Jog,Box --by-subject
+CUDA Device Count:  1
+Namespace(dataset='humaneva15', keypoints='gt', subjects_train='Train/S1,Train/S2,Train/S3', subjects_test='Validate/S1,Validate/S2,Validate/S3', subjects_unlabeled='', actions='Walk,Jog,Box', checkpoint='checkpoint/epoch1000', log='log/default', checkpoint_frequency=20, resume='', nolog=False, evaluate='s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin', render=False, by_subject=True, export_training_curves=False, stride=128, epochs=200, batch_size=1024, dropout=0.0, learning_rate=8e-05, lr_decay=0.996, coverlr=False, min_loss=100000, data_augmentation=True, cs=512, dep=7, alpha=0.01, beta=2, postrf=False, ftpostrf=False, number_of_frames=27, num_heads=8, context_length=20, architecture='3,3,3', slide_window_size=100, gpu='0', subset=1, downsample=1, warmup=1, no_eval=False, dense=False, disable_optimizations=False, linear_projection=False, bone_length_term=True, no_proj=False, ft=False, ftpath='checkpoint/exp13_ft2d', ftchk='epoch_330.pth', viz_subject=None, viz_action=None, viz_camera=0, viz_video=None, viz_skip=0, viz_output=None, viz_export=None, viz_bitrate=3000, viz_no_ground_truth=False, viz_limit=-1, viz_downsample=1, viz_size=5, compare=False, linear_channel_size=1024, depth=4, lr_decay_gap=10000, test_time_augmentation=True)
+Loading dataset...
+Preparing data...
+Loading 2D detections...
+Selected actions: ['Walk', 'Jog', 'Box']
+INFO: Receptive field: 27 frames
+INFO: Trainable parameter count: 34.762902 Million
+Loading checkpoint checkpoint/epoch1000/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 509 epochs
+INFO: Testing on 10539 frames
+Evaluating...
+Evaluating on subject Validate/S1
+Loading evaluate checkpoint checkpoint/epoch1000/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 509 epochs
+inference time = 1.5254042148590088
+
+----Box----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 23.259857731560867 mm
+Protocol #2 Error (P-MPJPE): 18.078598411132894 mm
+Protocol #3 Error (N-MPJPE): 22.515558016796906 mm
+Velocity Error (MPJVE): 2.106752618177173 mm
+----------
+Loading evaluate checkpoint checkpoint/epoch1000/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 509 epochs
+inference time = 0.6241564750671387
+
+----Walking----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 14.961900316517461 mm
+Protocol #2 Error (P-MPJPE): 10.139533741907641 mm
+Protocol #3 Error (N-MPJPE): 14.529256474678263 mm
+Velocity Error (MPJVE): 1.647222770385049 mm
+----------
+Loading evaluate checkpoint checkpoint/epoch1000/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 509 epochs
+inference time = 0.5157935619354248
+
+----Jog----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 24.479980270067852 mm
+Protocol #2 Error (P-MPJPE): 16.9184651130285 mm
+Protocol #3 Error (N-MPJPE): 22.244948416184158 mm
+Velocity Error (MPJVE): 4.050404472181048 mm
+----------
+Protocol #1   (MPJPE) action-wise average: 20.9 mm
+Protocol #2 (P-MPJPE) action-wise average: 15.0 mm
+Protocol #3 (N-MPJPE) action-wise average: 19.8 mm
+Velocity      (MPJVE) action-wise average: 2.6 mm
+
+Evaluating on subject Validate/S2
+Loading evaluate checkpoint checkpoint/epoch1000/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 509 epochs
+inference time = 0.8042223453521729
+
+----Box----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 30.419664829969406 mm
+Protocol #2 Error (P-MPJPE): 23.74493202401532 mm
+Protocol #3 Error (N-MPJPE): 29.738449015551144 mm
+Velocity Error (MPJVE): 3.7613086531766586 mm
+----------
+Loading evaluate checkpoint checkpoint/epoch1000/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 509 epochs
+inference time = 0.4364583492279053
+
+----Walking----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 14.541766295830408 mm
+Protocol #2 Error (P-MPJPE): 10.060052697857222 mm
+Protocol #3 Error (N-MPJPE): 14.196220474938551 mm
+Velocity Error (MPJVE): 1.7020699645703037 mm
+----------
+Loading evaluate checkpoint checkpoint/epoch1000/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 509 epochs
+inference time = 0.40848350524902344
+
+----Jog----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 12.915525895853838 mm
+Protocol #2 Error (P-MPJPE): 9.035669888059298 mm
+Protocol #3 Error (N-MPJPE): 12.580803595483303 mm
+Velocity Error (MPJVE): 2.468345764403542 mm
+----------
+Protocol #1   (MPJPE) action-wise average: 19.3 mm
+Protocol #2 (P-MPJPE) action-wise average: 14.3 mm
+Protocol #3 (N-MPJPE) action-wise average: 18.8 mm
+Velocity      (MPJVE) action-wise average: 2.64 mm
+
+Evaluating on subject Validate/S3
+Loading evaluate checkpoint checkpoint/epoch1000/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 509 epochs
+inference time = 0.4688143730163574
+
+----Box----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 29.29121193786462 mm
+Protocol #2 Error (P-MPJPE): 20.579553519686062 mm
+Protocol #3 Error (N-MPJPE): 28.571902463833492 mm
+Velocity Error (MPJVE): 3.548992254460851 mm
+----------
+Loading evaluate checkpoint checkpoint/epoch1000/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 509 epochs
+inference time = 0.5447378158569336
+
+----Walking----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 19.596795113209414 mm
+Protocol #2 Error (P-MPJPE): 13.107755276210169 mm
+Protocol #3 Error (N-MPJPE): 16.998412471045466 mm
+Velocity Error (MPJVE): 1.962033874245689 mm
+----------
+Loading evaluate checkpoint checkpoint/epoch1000/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 509 epochs
+inference time = 0.41940808296203613
+
+----Jog----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 18.407884364326794 mm
+Protocol #2 Error (P-MPJPE): 10.87682880461216 mm
+Protocol #3 Error (N-MPJPE): 17.95968289176623 mm
+Velocity Error (MPJVE): 2.928155707195401 mm
+----------
+Protocol #1   (MPJPE) action-wise average: 22.4 mm
+Protocol #2 (P-MPJPE) action-wise average: 14.9 mm
+Protocol #3 (N-MPJPE) action-wise average: 21.2 mm
+Velocity      (MPJVE) action-wise average: 2.81 mm
+

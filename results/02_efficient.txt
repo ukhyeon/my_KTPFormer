@@ -1,0 +1,110 @@
+효율
+Evaluating...
+Evaluating on subject Validate/S1
+Loading evaluate checkpoint checkpoint/sand/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 510 epochs
+inference time : 1.8738007545471191
+----Box----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 21.832604582111042 mm
+Protocol #2 Error (P-MPJPE): 18.668773925552767 mm
+Protocol #3 Error (N-MPJPE): 21.49475635960698 mm
+Velocity Error (MPJVE): 2.177328562053541 mm
+----------
+Loading evaluate checkpoint checkpoint/sand/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 510 epochs
+inference time : 1.0910975933074951
+----Walking----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 15.046844061351184 mm
+Protocol #2 Error (P-MPJPE): 10.55747288928339 mm
+Protocol #3 Error (N-MPJPE): 14.698506036603993 mm
+Velocity Error (MPJVE): 1.7958501650189813 mm
+----------
+Loading evaluate checkpoint checkpoint/sand/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 510 epochs
+inference time : 1.1020591259002686
+----Jog----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 24.865015433766903 mm
+Protocol #2 Error (P-MPJPE): 17.983810546306465 mm
+Protocol #3 Error (N-MPJPE): 22.397995615998905 mm
+Velocity Error (MPJVE): 4.3765660494757 mm
+----------
+Protocol #1   (MPJPE) action-wise average: 20.6 mm
+Protocol #2 (P-MPJPE) action-wise average: 15.7 mm
+Protocol #3 (N-MPJPE) action-wise average: 19.5 mm
+Velocity      (MPJVE) action-wise average: 2.78 mm
+
+Evaluating on subject Validate/S2
+Loading evaluate checkpoint checkpoint/sand/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 510 epochs
+inference time : 2.2691218852996826
+----Box----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 29.778627140654457 mm
+Protocol #2 Error (P-MPJPE): 24.087991358505352 mm
+Protocol #3 Error (N-MPJPE): 29.22068163752556 mm
+Velocity Error (MPJVE): 4.120883335255914 mm
+----------
+Loading evaluate checkpoint checkpoint/sand/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 510 epochs
+inference time : 0.74289870262146
+----Walking----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 13.395555317401886 mm
+Protocol #2 Error (P-MPJPE): 9.899999635914961 mm
+Protocol #3 Error (N-MPJPE): 13.150732653836409 mm
+Velocity Error (MPJVE): 1.8146049696952105 mm
+----------
+Loading evaluate checkpoint checkpoint/sand/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 510 epochs
+inference time : 0.5711922645568848
+----Jog----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 13.015050751467546 mm
+Protocol #2 Error (P-MPJPE): 9.301205786565939 mm
+Protocol #3 Error (N-MPJPE): 12.761026620864868 mm
+Velocity Error (MPJVE): 2.664975511531035 mm
+----------
+Protocol #1   (MPJPE) action-wise average: 18.7 mm
+Protocol #2 (P-MPJPE) action-wise average: 14.4 mm
+Protocol #3 (N-MPJPE) action-wise average: 18.4 mm
+Velocity      (MPJVE) action-wise average: 2.87 mm
+
+Evaluating on subject Validate/S3
+Loading evaluate checkpoint checkpoint/sand/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 510 epochs
+inference time : 0.6090521812438965
+----Box----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 28.573642795284588 mm
+Protocol #2 Error (P-MPJPE): 20.884015907843906 mm
+Protocol #3 Error (N-MPJPE): 28.303200379014015 mm
+Velocity Error (MPJVE): 3.807284248371919 mm
+----------
+Loading evaluate checkpoint checkpoint/sand/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 510 epochs
+inference time : 1.0652992725372314
+----Walking----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 20.982970593168456 mm
+Protocol #2 Error (P-MPJPE): 13.82148265838623 mm
+Protocol #3 Error (N-MPJPE): 17.82544813684973 mm
+Velocity Error (MPJVE): 2.1807857624748173 mm
+----------
+Loading evaluate checkpoint checkpoint/sand/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 510 epochs
+inference time : 0.577244758605957
+----Jog----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 18.69611752529939 mm
+Protocol #2 Error (P-MPJPE): 11.875033378601074 mm
+Protocol #3 Error (N-MPJPE): 18.390392263730366 mm
+Velocity Error (MPJVE): 3.1573579957087836 mm
+----------
+Protocol #1   (MPJPE) action-wise average: 22.8 mm
+Protocol #2 (P-MPJPE) action-wise average: 15.5 mm
+Protocol #3 (N-MPJPE) action-wise average: 21.5 mm
+Velocity      (MPJVE) action-wise average: 3.05 mm
+

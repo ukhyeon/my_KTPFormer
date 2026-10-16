@@ -1,0 +1,30 @@
+Train!
+python run_ktpformer_sand_qk_softmax.py -k gt -c checkpoint/sand_qk_softmax -f 27 -d humaneva15 -str Train/S1,Train/S2,Train/S3 -ste Validate/S1,Validate/S2,Validate/S3 -b 1024 -e 800 -a Walk,Jog,Box --by-subject -l log/run -lrd 0.998 -r s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+CUDA Device Count:  1
+Namespace(dataset='humaneva15', keypoints='gt', subjects_train='Train/S1,Train/S2,Train/S3', subjects_test='Validate/S1,Validate/S2,Validate/S3', subjects_unlabeled='', actions='Walk,Jog,Box', checkpoint='checkpoint/sand_qk_softmax', log='log/run', checkpoint_frequency=20, resume='s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin', nolog=False, evaluate='', render=False, by_subject=True, export_training_curves=False, stride=128, epochs=800, batch_size=1024, dropout=0.0, learning_rate=8e-05, lr_decay=0.998, coverlr=False, min_loss=100000, data_augmentation=True, cs=512, dep=7, alpha=0.01, beta=2, postrf=False, ftpostrf=False, number_of_frames=27, num_heads=8, context_length=20, architecture='3,3,3', slide_window_size=100, gpu='0', subset=1, downsample=1, warmup=1, no_eval=False, dense=False, disable_optimizations=False, linear_projection=False, bone_length_term=True, no_proj=False, ft=False, ftpath='checkpoint/exp13_ft2d', ftchk='epoch_330.pth', viz_subject=None, viz_action=None, viz_camera=0, viz_video=None, viz_skip=0, viz_output=None, viz_export=None, viz_bitrate=3000, viz_no_ground_truth=False, viz_limit=-1, viz_downsample=1, viz_size=5, compare=False, linear_channel_size=1024, depth=4, lr_decay_gap=10000, test_time_augmentation=True)
+Loading dataset...
+Preparing data...
+Loading 2D detections...
+Selected actions: ['Walk', 'Jog', 'Box']
+INFO: Receptive field: 27 frames
+INFO: Trainable parameter count: 24.534166 Million
+Loading checkpoint checkpoint/sand_qk_softmax/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 512 epochs
+INFO: Testing on 10539 frames
+INFO: Training on 10080 frames
+** Note: reported losses are averaged over all frames.
+** The final evaluation will be carried out after the last training epoch.
+[513] time 0.79 lr 0.000029 3d_train 25.452811 3d_eval 14.262769 3d_valid 23.545242 3d_val_velocity 2.544998
+save best checkpoint
+[514] time 0.78 lr 0.000029 3d_train 24.616208 3d_eval 14.138048 3d_valid 23.443887 3d_val_velocity 2.554358
+save best checkpoint
+[515] time 1.62 lr 0.000029 3d_train 24.962917 3d_eval 13.767218 3d_valid 23.831953 3d_val_velocity 2.543020
+[516] time 1.74 lr 0.000029 3d_train 23.857831 3d_eval 14.001989 3d_valid 23.554940 3d_val_velocity 2.552928
+[517] time 1.02 lr 0.000028 3d_train 24.049373 3d_eval 14.519361 3d_valid 23.643143 3d_val_velocity 2.549182
+[518] time 0.78 lr 0.000028 3d_train 23.957448 3d_eval 14.536150 3d_valid 23.546911 3d_val_velocity 2.550921
+[519] time 0.82 lr 0.000028 3d_train 24.950957 3d_eval 14.164231 3d_valid 23.528283 3d_val_velocity 2.535266
+[520] time 0.80 lr 0.000028 3d_train 22.816444 3d_eval 13.658064 3d_valid 23.296149 3d_val_velocity 2.537298 
+Saving checkpoint to checkpoint/sand_qk_softmax/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_epoch_520.bin
+save best checkpoint
+[521] time 0.79 lr 0.000028 3d_train 24.591846 3d_eval 14.710150 3d_valid 23.343704 3d_val_velocity 2.551186
+[522] time 0.85 lr 0.000028 3d_train 28.829199 3d_eval 15.117675 3d_valid 24.037276 3d_val_velocity 2.555673

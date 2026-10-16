@@ -1,0 +1,119 @@
+렐루
+Evaluating...
+Evaluating on subject Validate/S1
+Loading evaluate checkpoint checkpoint/sand_qk_relu/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 522 epochs
+inference time: 2.8044798374176025
+
+----Box----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 23.043875582516193 mm
+Protocol #2 Error (P-MPJPE): 19.451241195201874 mm
+Protocol #3 Error (N-MPJPE): 22.85968605428934 mm
+Velocity Error (MPJVE): 2.224240979800622 mm
+----------
+Loading evaluate checkpoint checkpoint/sand_qk_relu/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 522 epochs
+inference time: 2.6267483234405518
+
+----Walking----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 15.820548587450475 mm
+Protocol #2 Error (P-MPJPE): 11.329662026555248 mm
+Protocol #3 Error (N-MPJPE): 15.643647039365588 mm
+Velocity Error (MPJVE): 1.856061928926713 mm
+----------
+Loading evaluate checkpoint checkpoint/sand_qk_relu/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 522 epochs
+inference time: 2.018650770187378
+
+----Jog----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 25.964054302909435 mm
+Protocol #2 Error (P-MPJPE): 18.919999878375958 mm
+Protocol #3 Error (N-MPJPE): 23.736272484828262 mm
+Velocity Error (MPJVE): 4.51776159939189 mm
+----------
+Protocol #1   (MPJPE) action-wise average: 21.6 mm
+Protocol #2 (P-MPJPE) action-wise average: 16.6 mm
+Protocol #3 (N-MPJPE) action-wise average: 20.7 mm
+Velocity      (MPJVE) action-wise average: 2.87 mm
+
+Evaluating on subject Validate/S2
+Loading evaluate checkpoint checkpoint/sand_qk_relu/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 522 epochs
+inference time: 3.5218989849090576
+
+----Box----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 30.969756883051662 mm
+Protocol #2 Error (P-MPJPE): 24.30906622774071 mm
+Protocol #3 Error (N-MPJPE): 30.355766581164467 mm
+Velocity Error (MPJVE): 4.131567550616132 mm
+----------
+Loading evaluate checkpoint checkpoint/sand_qk_relu/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 522 epochs
+inference time: 1.1585674285888672
+
+----Walking----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 14.825894497334957 mm
+Protocol #2 Error (P-MPJPE): 10.67583728581667 mm
+Protocol #3 Error (N-MPJPE): 14.556133498748144 mm
+Velocity Error (MPJVE): 1.8983751457805436 mm
+----------
+Loading evaluate checkpoint checkpoint/sand_qk_relu/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 522 epochs
+inference time: 1.1698508262634277
+
+----Jog----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 14.314543455839157 mm
+Protocol #2 Error (P-MPJPE): 10.206758044660091 mm
+Protocol #3 Error (N-MPJPE): 13.990896133085093 mm
+Velocity Error (MPJVE): 2.7722076823314032 mm
+----------
+Protocol #1   (MPJPE) action-wise average: 20.0 mm
+Protocol #2 (P-MPJPE) action-wise average: 15.1 mm
+Protocol #3 (N-MPJPE) action-wise average: 19.6 mm
+Velocity      (MPJVE) action-wise average: 2.93 mm
+
+Evaluating on subject Validate/S3
+Loading evaluate checkpoint checkpoint/sand_qk_relu/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 522 epochs
+inference time: 1.2409932613372803
+
+----Box----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 30.17480360964934 mm
+Protocol #2 Error (P-MPJPE): 21.599283441901207 mm
+Protocol #3 Error (N-MPJPE): 29.568754757444065 mm
+Velocity Error (MPJVE): 3.9247674091408653 mm
+----------
+Loading evaluate checkpoint checkpoint/sand_qk_relu/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 522 epochs
+inference time: 1.912257432937622
+
+----Walking----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 22.97140544682157 mm
+Protocol #2 Error (P-MPJPE): 14.678401598597274 mm
+Protocol #3 Error (N-MPJPE): 19.366678380060428 mm
+Velocity Error (MPJVE): 2.210416324327097 mm
+----------
+Loading evaluate checkpoint checkpoint/sand_qk_relu/s_128_L_7_C_512_H_8_f_27_ktpformer_gt_best_epoch.bin
+This model was trained for 522 epochs
+inference time: 1.562706470489502
+
+----Jog----
+Test time augmentation: False
+Protocol #1 Error (MPJPE): 20.535312592983246 mm
+Protocol #2 Error (P-MPJPE): 12.53505020091931 mm
+Protocol #3 Error (N-MPJPE): 20.213942353924114 mm
+Velocity Error (MPJVE): 3.287064998100201 mm
+----------
+Protocol #1   (MPJPE) action-wise average: 24.6 mm
+Protocol #2 (P-MPJPE) action-wise average: 16.3 mm
+Protocol #3 (N-MPJPE) action-wise average: 23.0 mm
+Velocity      (MPJVE) action-wise average: 3.14 mm
+
