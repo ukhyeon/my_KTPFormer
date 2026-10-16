@@ -261,24 +261,7 @@ cp -r /tmp/my_KTPFormer/src/* .
 
 ---
 
-## 8. 복원 관련 안내
-
-원본 작업 디렉터리(`~/python/KTPFormer_hh`)가 유실되어, 2026-10 시점에
-VS Code Local History 스냅샷에서 수정 파일을 복원해 재구성한 저장소입니다.
-
-- **복원됨**: 위 `src/` 7개 파일 (각 4~18개 중간 버전 포함), 학습 로그 2건, 평가 결과 4건, 발표자료
-- **유실됨**: 학습 체크포인트(`.bin`), `cal_flops.py`, token reduction 계열 ablation 구현,
-  원본에서 가져온 나머지 `common/` 파일
-
-결과 표의 token reduction / soft match 행은 발표자료에 수치는 남아 있으나 해당 구현 코드는 복원되지 않았습니다.
-
-`results/03_efficient_fa_relu.txt`, `04_efficient_fa_softmax.txt`의 action-wise 수치는
-결과 표(2024-12-16 작성)와 일부 차이가 있습니다. 두 txt는 2024-12-09 시점 체크포인트 기준이며,
-표는 이후 추가 학습분으로 갱신된 것으로 보입니다. baseline과 Efficient 행은 txt와 정확히 일치합니다.
-
----
-
-## 9. 참고 문헌
+## 8. 참고 문헌
 
 1. Peng et al., **KTPFormer: Kinematics and Trajectory Prior Knowledge-Enhanced Transformer for 3D Human Pose Estimation**, CVPR 2024. [[paper]](https://arxiv.org/abs/2404.00658) [[code]](https://github.com/JihuaPeng/KTPFormer)
 2. Liu et al., **EfficientViT: Memory Efficient Vision Transformer with Cascaded Group Attention**, CVPR 2023. [[paper]](https://arxiv.org/abs/2305.07027)
